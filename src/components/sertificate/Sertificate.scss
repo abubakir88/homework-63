@@ -1,0 +1,28 @@
+.seer {
+  h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    span {
+      color: #ef7c00;
+    }
+  }
+  .seer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    i {
+      color: #bfc1c7;
+      font-size: 50px;
+      cursor: pointer;
+    }
+  }
+  i {
+    display: grid;
+    place-items: center;
+    font-size: 70px;
+    color: #ef7c00;
+  }
+}
