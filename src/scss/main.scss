@@ -10,7 +10,7 @@
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -25,4 +25,41 @@ button {
 
 .dark * {
   color: white !important;
+}
+
+.menu {
+  border: 0;
+  background: transparent;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .nav-items {
+    flex-direction: column;
+    gap: 24px;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 104px);
+    background: #fff;
+    padding: 60px 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    hr {
+      display: none;
+    }
+  }
+  .menu {
+    display: block;
+  }
+
+  .open .nav-items {
+    left: 0;
+  }
+
+  .open {
+    box-shadow: none;
+  }
 }

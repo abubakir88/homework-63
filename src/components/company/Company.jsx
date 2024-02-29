@@ -3,7 +3,7 @@ import "./Company.scss";
 function Company() {
   return (
     <>
-      <section className="company">
+      <section className="company" id="company">
         <div className="container">
           <h1>
             О компании <span>LEANGROUP</span>

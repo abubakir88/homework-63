@@ -3,7 +3,7 @@ import "./Sertificate.scss";
 function Sertificate() {
   return (
     <>
-      <section className="seer">
+      <section className="seer" id="seer">
         <div className="container">
           <h1>
             Качество продукции подтверждают <span>сертификаты</span>

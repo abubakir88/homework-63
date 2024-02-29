@@ -6,6 +6,13 @@ import "./Header.scss";
 //   document.body.classList.toggle("dark");
 // });
 
+// const header = document.querySelector("header");
+// const menuBtn = document.querySelector(".menu");
+
+// menuBtn.addEventListener("click", () => {
+//   header.classList.toggle("open");
+// });
+
 function Header() {
   return (
     <>
@@ -44,6 +51,9 @@ function Header() {
                 <button>Контакты</button>
               </div>
             </div>
+            <button className="menu">
+              <i className="bx bx-menu-alt-right"></i>
+            </button>
             <button id="light-dark">Dark Mode</button>
           </nav>
         </div>
