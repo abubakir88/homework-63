@@ -1,0 +1,46 @@
+header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  nav {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-items {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .nav-item {
+        button {
+          color: #2c2d2e;
+          font-size: 16px;
+          font-weight: 500;
+          background-color: transparent;
+          border: 0;
+          &:hover {
+            color: #ef7c00;
+            transition: 0.3s;
+          }
+        }
+      }
+      hr {
+        height: 28px;
+        color: #00103d1f;
+      }
+    }
+    button {
+      background-color: transparent;
+      color: #2c2d2e;
+      border: 0;
+      font-size: 16px;
+      font-weight: 600;
+      &:hover {
+        color: #ef7c00;
+      }
+    }
+  }
+}
