@@ -9,7 +9,10 @@ function Company() {
             О компании <span>LEANGROUP</span>
           </h1>
           <div className="company-content">
-            <img src="/images/company-img.png" alt="images" />
+            <div className="company-img">
+              {/* <img src="/images/company-img.png" alt="images" /> */}
+              <i className="bx bx-play-circle"></i>
+            </div>
             <div className="texts">
               <p>
                 Компания ООО «ЛеанГрупп» начала свою деятельность в 1999 году и

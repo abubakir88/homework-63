@@ -31,6 +31,12 @@
         background-color: #ef7c00;
         color: #fff;
         border-radius: 4px;
+        font-weight: 500;
+        &:hover {
+          background-color: transparent;
+          color: #ef7c00;
+          transition: 0.3s;
+        }
       }
     }
     .hero-social {
@@ -41,6 +47,10 @@
       a i {
         color: #ef7c00;
         font-size: 30px;
+        &:hover {
+          color: #faa448;
+          transition: 0.2s;
+        }
       }
     }
   }
