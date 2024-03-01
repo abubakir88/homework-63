@@ -1,18 +1,12 @@
 import "./Header.scss";
 
-// let modeBtn = document.getElementById("light-dark");
+const handClick = () => {
+  document.body.classList.toggle("dark");
+};
 
-// modeBtn.addEventListener("click", function () {
-//   document.body.classList.toggle("dark");
-// });
-
-// const header = document.querySelector("header");
-// const menuBtn = document.querySelector(".menu");
-
-// menuBtn.addEventListener("click", () => {
-//   header.classList.toggle("open");
-// });
-
+const navbar = () => {
+  document.body.classList.toggle("open");
+};
 function Header() {
   return (
     <>
@@ -51,10 +45,14 @@ function Header() {
                 <button>Контакты</button>
               </div>
             </div>
-            <button className="menu">
-              <i className="bx bx-menu-alt-right"></i>
-            </button>
-            <button id="light-dark">Dark Mode</button>
+            <div className="nav-btns">
+              <button onClick={navbar} className="menu">
+                <i className="bx bx-menu-alt-right"></i>
+              </button>
+              <button className="mode" onClick={handClick}>
+                Dark Mode
+              </button>
+            </div>
           </nav>
         </div>
       </header>

@@ -13,6 +13,7 @@ header {
     .nav-items {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 16px;
       .nav-item {
         button {
@@ -31,15 +32,60 @@ header {
         color: #00103d1f;
       }
     }
-    button {
-      background-color: transparent;
-      color: #2c2d2e;
-      border: 0;
-      font-size: 16px;
-      font-weight: 600;
-      &:hover {
-        color: #ef7c00;
+    .nav-btns {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      .menu {
+        border: 0;
+        background: transparent;
+        display: none;
+        cursor: pointer;
+        font-size: 40px;
+      }
+      .mode {
+        background-color: transparent;
+        color: #2c2d2e;
+        border: 0;
+        font-size: 16px;
+        font-weight: 600;
+        &:hover {
+          color: #ef7c00;
+        }
       }
     }
   }
+}
+
+@media (max-width: 1080px) {
+  .nav-items {
+    flex-direction: column;
+    gap: 24px;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 104px);
+    background: #fff;
+    padding: 60px 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+    hr {
+      display: none;
+    }
+  }
+  header nav .nav-btns .menu {
+    display: block;
+  }
+
+  .open .nav-items {
+    left: 0;
+  }
+
+  .open {
+    box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
 }
