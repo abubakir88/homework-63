@@ -15,11 +15,12 @@
         }
       }
       .btns {
-        padding: 40px 0;
+        padding: 20px 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 24px;
+        flex-wrap: wrap;
+        column-gap: 24px;
         button {
           font-size: 13px;
           font-weight: 500;
@@ -42,6 +43,7 @@
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
+      row-gap: 30px;
     }
   }
   button {

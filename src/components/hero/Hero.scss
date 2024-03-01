@@ -55,3 +55,14 @@
     }
   }
 }
+
+@media (max-width: 652px) {
+  .hero .hero-content .hero-social {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 50px;
+  }
+}

@@ -79,3 +79,17 @@
     }
   }
 }
+
+@media (max-width: 540px) {
+  .info .info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .inputs {
+      justify-content: center;
+    }
+  }
+  textarea {
+    width: clamp(200px, 90%, 500px);
+  }
+}
