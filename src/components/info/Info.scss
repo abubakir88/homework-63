@@ -2,9 +2,79 @@
   .info-content {
     margin-top: 80px;
     background-image: url(/images/info-bg.png);
-    width: 100%;
+    width: auto;
     background-repeat: no-repeat;
-    min-height: 600px;
+    min-height: 376px;
     background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 32px 0px #00103d29;
+    .texts {
+      padding: 20px;
+      h1 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #2c2d2e;
+        span {
+          color: #ef7c00;
+        }
+      }
+      p {
+        color: #2c2d2e;
+        max-width: 430px;
+        line-height: 20px;
+        padding: 16px 0 24px 0;
+      }
+    }
+    .inputs {
+      padding: 0px 0px 36px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      .input-1 {
+        border: 1px solid #00103d1f;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        label {
+          i {
+            color: #ef7c00;
+            font-size: 30px;
+            padding: 0 10px;
+          }
+        }
+        hr {
+          height: 40px;
+          color: #00103d1f;
+          width: 1px;
+        }
+        input {
+          border: 0;
+          padding: 10px;
+        }
+      }
+    }
+
+    textarea {
+      margin: 16px;
+      resize: none;
+      border: 1px solid #00103d1f;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+      display: block;
+    }
+  }
+  button {
+    margin: 12px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ef7c00;
+    border-radius: 4px;
+    border: 2px solid #ef7c00;
+    &:hover {
+      background-color: transparent;
+      color: #ef7c00;
+    }
   }
 }

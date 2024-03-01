@@ -4,9 +4,13 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  outline: none;
+  outline: none !important;
   font-family: Montserrat, sans-serif !important;
   scroll-behavior: smooth;
+}
+
+label {
+  cursor: pointer !important;
 }
 
 .container {
