@@ -27,13 +27,13 @@ button {
   background: rgb(3, 3, 67) !important;
   header {
     background-color: rgb(3, 3, 67);
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .dark * {
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
   color: #ef7c00 !important;
   button {
     color: #fff !important;
